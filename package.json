@@ -11,6 +11,8 @@
     "@testing-library/jest-dom": "5.11.9",
     "@testing-library/react": "11.2.5",
     "@testing-library/user-event": "12.6.2",
+    "babel-preset-react-app": "10.0.1",
+    "ccbp-jest-reporter": "file:D:/ccbp-jest-reporter",
     "chalk": "4.1.0",
     "jest-styled-components": "7.0.5",
     "msw": "0.33.3",
@@ -34,7 +36,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "jest --clearCache && craco test --watchAll=false",
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
     "format": "prettier --write \"./src\"",
